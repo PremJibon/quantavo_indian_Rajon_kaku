@@ -1,0 +1,304 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Button CSS
+2. Textarea CSS
+3. Input CSS
+4. Text CSS
+5. Heading CSS
+6. Container CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Button CSS
+--------------------------------------*/
+.ui.button.circle {
+  border-radius: 50%;
+}
+
+.ui.button.round {
+  border-radius: var(--radius-lg);
+}
+
+.ui.button.square {
+  border-radius: 0px;
+}
+
+.ui.button.size-xl {
+  height: 68px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.ui.button.size-md {
+  height: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 20px;
+}
+
+.ui.button.size-lg {
+  height: 67px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 16px;
+}
+
+.ui.button.size-xs {
+  height: 38px;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.ui.button.size-sm {
+  height: 46px;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.ui.button.fill.black_900 {
+  background-color: var(--black_900);
+  color: var(--white_A700);
+}
+
+.ui.button.outline.black_900 {
+  color: var(--black_900);
+  border: 3px solid var(--black_900);
+}
+
+.ui.button.fill.red_300 {
+  background-color: var(--red_300);
+  box-shadow: var(--shadow-sm);
+}
+
+.ui.button.fill.cyan_400 {
+  background-color: var(--cyan_400);
+  box-shadow: var(--shadow-2xl);
+}
+
+.ui.button.fill.lime_800 {
+  background-color: var(--lime_800);
+  box-shadow: var(--shadow-3xl);
+}
+
+.ui.button.fill.red_400_01 {
+  background-color: var(--red_400_01);
+}
+
+.ui.button.fill.green_600 {
+  background-color: var(--green_600);
+  box-shadow: var(--shadow-xl);
+  color: var(--white_A700);
+}
+
+.ui.button {
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------------------------
+  2. Textarea CSS
+--------------------------------------*/
+.ui.textarea.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.textarea.size-xs {
+  height: 174px;
+  font-size: 16px;
+  padding: var(--space-2xl);
+}
+
+.ui.textarea.tarfillgray100.gray_100 {
+  background-color: var(--gray_100);
+}
+
+/*-------------------------------------
+  3. Input CSS
+--------------------------------------*/
+.ui.input.round {
+  border-radius: var(--radius-sm);
+}
+
+.ui.input.size-xs {
+  height: 83px;
+  padding-left: var(--space-2xl);
+  padding-right: 35px;
+  font-size: 16px;
+}
+
+.ui.input.fill.gray_100 {
+  background-color: var(--gray_100);
+  color: var(--gray_400);
+}
+
+.ui.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: text;
+  color: var(--gray_400);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--gray_100);
+  border-radius: var(--radius-sm);
+}
+
+/*-------------------------------------
+  4. Text CSS
+--------------------------------------*/
+.ui.text.size-xs {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ui.text.size-lg {
+  font-size: 25px;
+  font-weight: 400;
+  @media only screen and (max-width: 1050px) {
+    font-size: 23px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 21px;
+  }
+}
+
+.ui.text.size-s {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ui.text.size-md {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ui.text {
+  color: var(--gray_700);
+  font-family: Source Sans Pro;
+}
+
+/*-------------------------------------
+  5. Heading CSS
+--------------------------------------*/
+.ui.heading.size-3xl {
+  font-size: 35px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 33px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 31px;
+  }
+}
+
+.ui.heading.size-2xl {
+  font-size: 30px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.ui.heading.size-5xl {
+  font-size: 50px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 46px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 40px;
+  }
+}
+
+.ui.heading.size-xl {
+  font-size: 25px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 23px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 21px;
+  }
+}
+
+.ui.heading.size-4xl {
+  font-size: 40px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 38px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 36px;
+  }
+}
+
+.ui.heading.size-6xl {
+  font-size: 75px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 48px;
+  }
+}
+
+.ui.heading.size-s {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ui.heading.size-md {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ui.heading.size-xs {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ui.heading.size-lg {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ui.heading {
+  color: var(--white_A700);
+  font-family: Source Sans Pro;
+}
+
+/*-------------------------------------
+  6. Container CSS
+--------------------------------------*/
+.container-xs {
+  max-width: 1180px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 1192px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rowhome li a {
+  text-decoration: none; /* Remove underline */
+}
+
+.rowhome li a .about.ui.heading.size-md {
+  color: white; /* Set text color to white */
+  font-weight: bold; /* Add bold font weight */
+}

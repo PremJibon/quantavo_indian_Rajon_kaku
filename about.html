@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* Resetting default margin and padding */
+        
+  
+        /* Styling for the particles container */
+        #particles-js {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black; /* Fallback background color */
+          z-index: 0; /* Ensure particles are behind content */
+        }
+  
+        /* Container for the centered content */
+        .content-container {
+          position: relative;
+          width: 100%;
+          height: 100vh; /* Ensure container covers entire viewport */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1; /* Ensure content is on top of particles */
+        }
+  
+        /* Styling for the logo text */
+        .logo {
+          color: white; /* Color of the text */
+          font-family: "Arial", sans-serif; /* Font family */
+          font-size: 48px; /* Font size */
+          text-transform: uppercase; /* Uppercase text */
+        }
+        header{
+            z-index: 100;
+            color: white;
+        }
+        .hero{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            text-align: center;
+
+        }
+        h1{
+            font-size: 60px;
+            letter-spacing: 15px;
+        }
+        hr{
+            width: 50%;
+            margin: 30px auto;
+            border: 1.5px solid #fff;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js">
+        <h1>QUIVATO</h1>
+    </div>
+
+    <header>
+        <div class="hero">
+            <p>Building Awesome Website</p>
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="countdown"></p>
+        </div>
+    </header>
+    
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var countDownDate = new Date("June 30, 2024 00:00:00").getTime();
+
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

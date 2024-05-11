@@ -1,0 +1,283 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.name {
+  width: 100%;
+}
+
+.row-3 {
+  gap: var(--space-5xl);
+  display: flex;
+  align-items: center;
+}
+
+.image-19 {
+  height: 24px;
+  width: 24px;
+}
+
+.sendmessage {
+  color: var(--gray_600) !important;
+}
+
+.lineeleven {
+  height: 1px;
+  background-color: var(--gray_200);
+  align-self: stretch;
+  width: 100%;
+}
+
+.iconbutton-1 {
+  width: 47px;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.slider1 {
+  margin-top: 54px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    padding: var(--space-3xl);
+  }
+}
+
+.stackgetintouch {
+  height: 646px;
+  background-color: var(--blue_50);
+  position: relative;
+  padding: 52px;
+  border-radius: var(--radius-9xl);
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+    padding: var(--space-3xl);
+  }
+}
+
+.image-18 {
+  height: 381px;
+  margin-top: 71px;
+  width: 97%;
+}
+
+.columngetintouc {
+  gap: 76px;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  height: max-content;
+  margin: auto;
+  @media only screen and (max-width: 1050px) {
+    gap: 57px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 38px;
+  }
+}
+
+.rowsendmessage {
+  margin-top: 100px;
+  gap: var(--space-11xl);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  max-width: 1191px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    padding: var(--space-3xl);
+  }
+}
+
+.columnsend {
+  gap: 23px;
+  background-color: var(--white_A700);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  padding: 72px 56px 72px 72px;
+  border-radius: var(--radius-3xl);
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+    padding: var(--space-3xl);
+  }
+}
+
+.columnsendmessa {
+  align-self: center;
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.lineeleven_one {
+  height: 1px;
+  margin-top: 13px;
+  background-color: var(--gray_200);
+  align-self: stretch;
+  width: 100%;
+}
+
+.columnname {
+  margin-top: 23px;
+  gap: var(--space-7xl);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.rowname {
+  gap: var(--space-7xl);
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.your_message {
+  color: var(--gray_400);
+  font-weight: 700;
+  @media only screen and (max-width: 550px) {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+}
+
+.send {
+  margin-bottom: 30px;
+  margin-left: 39px;
+  gap: var(--space-xl);
+  min-width: 182px;
+  border-radius: var(--radius-4xl);
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+}
+
+.save {
+  width: 18px;
+  height: 18px;
+}
+
+.column_two-1 {
+  margin-bottom: 12px;
+  gap: var(--space-7xl);
+  background-color: var(--white_A700);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  width: 32%;
+  flex-direction: column;
+  padding: 48px;
+  border-radius: var(--radius-3xl);
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    padding: var(--space-3xl);
+  }
+}
+
+.column-2 {
+  margin-top: 24px;
+  gap: var(--space-8xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.columncontact {
+  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.columnglobe_one {
+  gap: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-1 {
+  color: var(--gray_400_01) !important;
+  align-self: end;
+}
+
+.weburl {
+  color: var(--gray_400_01) !important;
+  align-self: start;
+}
+
+.rowlinkedin_one {
+  gap: var(--space-5xl);
+  display: flex;
+  align-items: start;
+}
+
+.sudirmanstreet {
+  color: var(--gray_400_01) !important;
+  width: 89%;
+  line-height: 111px;
+}
+
+.threemillionsixhundredeighteenthousandeighthundredseventyeight {
+  color: var(--gray_400_01) !important;
+}
+
+.column_one-1 {
+  margin-bottom: 25px;
+  gap: var(--space-11xl);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.columnsocialmed {
+  margin-right: 8px;
+  gap: var(--space-4xl);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.row_one-1 {
+  gap: var(--space-2xl);
+  display: flex;
+}
+
+.row_three-1 {
+  margin-top: 108px;
+  align-self: start;
+  width: 91%;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    padding: var(--space-3xl);
+  }
+}

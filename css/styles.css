@@ -1,0 +1,319 @@
+/*=========== TABLE OF CONTENTS ===========
+1. CSS Variables
+2. Common CSS
+==========================================*/
+
+/*-------------------------------------
+  1. CSS Variables
+--------------------------------------*/
+:root {
+  /*------Color variables------*/
+  --white_A700: #ffffff;
+  --cyan_50: #ccfaf5;
+  --cyan_400: #38b5c6;
+  --black_900: #000000;
+  --black_900_60: #00000060;
+  --black_900_68: #00000068;
+  --red_50: #ffecec;
+  --red_300: #f56767;
+  --red_400_01: #e05d5d;
+  --red_A200: #ff3c53;
+  --gray_100: #f6f6f6;
+  --gray_200: #eaeaea;
+  --gray_400: #b6b6b6;
+  --gray_600: #6c6c6c;
+  --gray_700: #595959;
+  --gray_800: #3c3c3c;
+  --gray_800_01: #3a3a3a;
+  --gray_400_01: #b1b1b1;
+  --yellow_100: #fffccc;
+  --pink_400: #c63973;
+  --deep_orange_A100: #f5ab67;
+  --green_600: #27a953;
+  --green_A100: #ccffd7;
+  --light_blue_400: #2dc3f2;
+  --orange_A200: #ffb039;
+  --indigo_800: #20398d;
+  --deep_purple_800: #3d349d;
+  --blue_50: #e5eeff;
+  --lime_800: #a1a325;
+
+  /*------Shadow variables------*/
+  --shadow-xs: 0px 50px 50px 0px #0000000c;
+  --shadow-sm: 0px 30px 50px 0px #f567677c;
+  --shadow-md: 0px 30px 90px 0px #00000019;
+  --shadow-lg: 0px 40px 200px 0px #00000014;
+  --shadow-xl: 10px 20px 50px 0px #27a95363;
+  --shadow-2xl: 0px 30px 50px 0px #38b5c687;
+  --shadow-3xl: 0px 30px 50px 0px #a5a82087;
+
+  /*------Border radius variables------*/
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 15px;
+  --radius-3xl: 20px;
+  --radius-4xl: 25px;
+  --radius-5xl: 30px;
+  --radius-6xl: 34px;
+  --radius-7xl: 35px;
+  --radius-8xl: 44px;
+  --radius-9xl: 90px;
+
+  /*------Spacing variables------*/
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 11px;
+  --space-lg: 12px;
+  --space-xl: 13px;
+  --space-2xl: 19px;
+  --space-3xl: 20px;
+  --space-4xl: 24px;
+  --space-5xl: 25px;
+  --space-6xl: 29px;
+  --space-7xl: 30px;
+  --space-8xl: 33px;
+  --space-9xl: 36px;
+  --space-10xl: 39px;
+  --space-11xl: 41px;
+  --space-12xl: 49px;
+  --space-13xl: 50px;
+  --space-14xl: 61px;
+  --space-15xl: 102px;
+}
+
+/*-------------------------------------
+  2. Common CSS
+--------------------------------------*/
+.homepage {
+  background-color: black !important;
+  width: 100%;
+}
+
+.columnheaderlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+
+.rowheaderlogo {
+  padding-left: 44px;
+  padding-right: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3xl);
+  @media only screen and (max-width: 1050px) {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    padding: var(--space-3xl);
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+
+.rowhome {
+  margin-right: 9px !important;
+  gap: var(--space-14xl);
+  display: flex;
+  align-items: start;
+  color: white;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.columnhome {
+  gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+
+.whatwedo {
+  color: rgb(255, 51, 0) !important;
+}
+
+.maximizeyour-span {
+  color: rgb(0, 0, 0);
+}
+
+.maximizeyour-span-1 {
+  color: var(--red_400_01);
+}
+
+.description {
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+}
+
+.userprofile {
+  gap: var(--space-10xl);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-1 {
+  height: 460px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.columnsarahjae {
+  gap: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sarahjae {
+  color: var(--gray_800_01) !important;
+}
+
+.branding {
+  color: var(--black_900_68) !important;
+}
+
+.footer {
+  padding-top: 47px;
+  padding-left: 47px;
+  padding-right: 47px;
+  border-top-right-radius: 50px;
+  display: flex;
+  background-color: var(--gray_800);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-top: var(--space-3xl);
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+}
+
+.roworaclebrand {
+  margin-top: 19px;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: var(--space-3xl);
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.columnfooterlog {
+  gap: var(--space-xs);
+  display: flex;
+  width: 69%;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.rowfooterlogo {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: var(--space-3xl);
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.headerlogo_one {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.row_two {
+  margin-top: 25px;
+  display: flex;
+}
+
+.rowabout_one {
+  display: flex;
+  align-items: center;
+}
+
+.columnabout_one {
+  gap: var(--space-13xl);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.columnabout_two {
+  gap: var(--space-6xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.columnfollowus {
+  gap: var(--space-12xl);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about_one {
+  letter-spacing: 4px;
+}
+
+.columndribbble {
+  gap: var(--space-6xl);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about_two {
+  letter-spacing: 0.9px;
+}
+
+.image_one {
+  height: 311px;
+  margin-top: 120px;
+  width: 24%;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}

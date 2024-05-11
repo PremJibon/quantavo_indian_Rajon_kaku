@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Baivab's Application1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" />
+    
+    <link
+      id="swiper-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/components.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Contact.css" />
+    <!-- adding animate.css cdn link-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!--adding styling for particls-js-->
+    <style>
+       body,
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Styling for the particles container */
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black; /* Fallback background color */
+        z-index: 0; /* Ensure particles are behind content */
+      }
+
+    </style>
+    <script
+      id="swiper-js"
+      src="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js"
+    ></script>
+    <script>
+      /**
+       * Hydrate slider #slider1
+       */
+      document.addEventListener("DOMContentLoaded", () => {
+        // Clone the first slides
+        const sliderTrack = document.querySelector(
+          "#slider1 > .swiper-wrapper"
+        );
+        const slides = document.querySelectorAll(
+          "#slider1 > .swiper-wrapper > .swiper-slide"
+        );
+        const slidesToShow = 1;
+        const slidesRequired = 2;
+        for (
+          let i = 0;
+          slides.length <= slidesToShow && i <= slidesRequired - 1;
+          i++
+        ) {
+          const index = i % slidesToShow;
+          const clone = slides[index]?.cloneNode(true);
+          clone?.setAttribute("cloned", "");
+          sliderTrack?.appendChild(clone);
+        }
+
+        const slider = new Swiper("#slider1", {
+          grabCursor: true,
+          loop: true,
+          slidesOffsetAfter: 0,
+          slidesOffsetBefore: 0,
+          slidesPerView: 1,
+          breakpoints: {
+            0: { slidesPerView: 1 },
+            550: { slidesPerView: 1 },
+            1050: { slidesPerView: 1 },
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--adding tags for animated particle-js background-->
+    <div id="particles-js">
+      <h1>QUIVATO</h1>
+    </div>
+    <div class="homepage">
+      <div class="columnheaderlog">
+        <header class="header">
+          <div class="rowheaderlogo container-sm">
+            <img
+              src="public/images/Quivato_fullpic.png"
+              alt="headerlogo"
+              class="headerlogo_one animate__animated  animate__flipInX"
+            />
+            <ul class="rowhome">
+              <li>
+                <a href="./Homepage.html">
+                  <!-- Link to your about page -->
+                  <h6 class="about ui heading size-md">Homepage</h6>
+                </a>
+              </li>
+
+              <li>
+                <a href="./Works.html">
+                  <!-- Link to your works page -->
+                  <h6 class="about ui heading size-md">Works</h6>
+                </a>
+              </li>
+              <li>
+                <a href="./Contact.html">
+                  <!-- Link to your contact page -->
+                  <h6 class="about ui heading size-md">Contact</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="slider1 container-sm swiper" id="slider1">
+          <div class="swiper-wrapper">
+            <div class="stackgetintouch swiper-slide">
+              <img
+                src="public/images/img_group_767.svg"
+                alt="image"
+                class="image-18 animate__animated animate__shakeX"
+              />
+              <div class="columngetintouc">
+                <h1 class="whatwedo ui heading size-5xl">
+                  <span class="maximizeyour-span animate__animated animate__jello"> Get in&nbsp;</span>
+                  <span class="maximizeyour-span-1 animate__animated animate__jello"> touch</span>
+                </h1>
+                <p class="description ui text size-md">
+                  Stay connected with us, we will help you with your various
+                  needs. we will provide the best service in technical and
+                  consulting matters. You can provide your needs or something
+                  you ask in the form below
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rowsendmessage" style="z-index: 1000;">
+          <div class="columnsend">
+            <div class="columnsendmessa">
+              <h2 class="sendmessage ui heading size-lg">Send Message</h2>
+              <div class="lineeleven_one"></div>
+              <div class="columnname">
+                <div class="rowname">
+                  <label class="name ui input gray_100 size-xs fill round">
+                    <input name="name" placeholder="Your Name" type="text" />
+                  </label>
+                  <label class="name ui input gray_100 size-xs fill round">
+                    <input name="email" placeholder="Your Email" type="email" />
+                  </label>
+                </div>
+                <textarea
+                  class="your_message ui textarea gray_100 size-xs tarfillgray100 round"
+                  name="your_message"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+            </div>
+            <button class="send ui button green_600 size-md fill">
+              <span> Send</span>
+              <img src="public/images/img_save.svg" alt="save" class="save animate__animated animate__fadeInTopRight animate__fadeInLeft" />
+            </button>
+          </div>
+          <div class="column_two-1">
+            <div class="column-2">
+              <div class="columncontact">
+                <h3 class="sendmessage ui heading size-lg">
+                  Contact Information
+                </h3>
+                <div class="lineeleven"></div>
+              </div>
+              <div class="columnglobe_one">
+                <div class="row-3">
+                  <img
+                    src="public/images/img_frame_666.svg"
+                    alt="image"
+                    class="image-19"
+                  />
+                  <h4 class="email-1 ui heading size-s">
+                    customercare@quivato.com
+                  </h4>
+                </div>
+                <div class="row-3">
+                  <img
+                    src="public/images/img_globe.svg"
+                    alt="globe"
+                    class="image-19"
+                  />
+                  <h5 class="weburl ui heading size-s">www.quivato.com</h5>
+                </div>
+                <div class="rowlinkedin_one">
+                  <img
+                    src="public/images/img_linkedin.svg"
+                    alt="linkedin"
+                    class="image-19"
+                  />
+                  <h6 class="sudirmanstreet ui heading size-s">
+                    Puducherry, Pondicherry
+                  </h6>
+                </div>
+                <div class="row-3">
+                  <img
+                    src="public/images/img_call.svg"
+                    alt="call"
+                    class="image-19"
+                  />
+                  <h6
+                    class="threemillionsixhundredeighteenthousandeighthundredseventyeight ui heading size-s"
+                  >
+                    --
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="column_one-1">
+              <div class="columnsocialmed">
+                <h5 class="sendmessage ui heading size-lg">Social Media</h5>
+                <div class="lineeleven"></div>
+              </div>
+              <div class="row_one-1">
+                <button class="iconbutton-1 ui button size-sm square">
+                  <img src="public/images/img_group_270.png" />
+                </button>
+                <button class="iconbutton-1 ui button size-sm square">
+                  <img src="public/images/img_group_271.png" />
+                </button>
+                <button class="iconbutton-1 ui button size-sm square">
+                  <img src="public/images/img_group_268.png" />
+                </button>
+                <button class="iconbutton-1 ui button size-sm square">
+                  <img src="public/images/img_group_269.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="particles.js"></script>
+    <script src="app.js"></script>
+</html>

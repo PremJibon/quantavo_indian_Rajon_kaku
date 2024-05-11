@@ -1,0 +1,256 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.column-1 {
+  gap: var(--space-7xl);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.image_one-2 {
+  height: 379px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.kellysikkemac {
+  height: 175px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.row-1 {
+  margin-top: 54px;
+  background-color: var(--yellow_100);
+  display: flex;
+  justify-content: center;
+  padding: 53px;
+  border-radius: var(--radius-9xl);
+  @media only screen and (max-width: 1050px) {
+    padding: var(--space-3xl);
+  }
+}
+
+.rowview_one {
+  margin-top: 19px;
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.columnview_one {
+  gap: 60px;
+  display: flex;
+  width: 9%;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-7xl);
+  }
+}
+
+.circleimage {
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+}
+
+.view_one {
+  height: 14px;
+  margin-left: 23px;
+  background-color: var(--pink_400);
+  width: 14px;
+  border-radius: var(--radius-md);
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.columnview_two {
+  gap: var(--space-14xl);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: end;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-7xl);
+  }
+}
+
+.view_two {
+  height: 14px;
+  margin-right: 134px;
+  background-color: var(--deep_orange_A100);
+  width: 14px;
+  border-radius: var(--radius-md);
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.rowgettoknow {
+  align-self: stretch;
+  display: flex;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.columngettoknow {
+  gap: 15px;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.gettoknow {
+  color: var(--black_900) !important;
+  text-align: center;
+  width: 66%;
+  line-height: 60px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.circleimage_one {
+  height: 89px;
+  margin-left: -11px;
+  position: relative;
+  width: 89px;
+  border-radius: 50%;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.circleimage_two {
+  height: 89px;
+  margin-right: 89px;
+  width: 89px;
+  border-radius: 50%;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.columnsarahjae-3 {
+  margin-top: 100px;
+  gap: 96px;
+  display: flex;
+  width: 83%;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    gap: 72px;
+    padding: var(--space-3xl);
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 48px;
+  }
+}
+
+.about-2 {
+  padding-left: 10px;
+  display: grid;
+  gap: var(--space-7xl);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.columnourmoment {
+  gap: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 550px) {
+    gap: 31px;
+  }
+}
+
+.rowkellysikkema {
+  gap: var(--space-7xl);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.image-16 {
+  height: 205px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.image_three {
+  height: 205px;
+  object-fit: cover;
+}
+
+.column_two {
+  gap: var(--space-6xl);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.columnkellysikk {
+  gap: var(--space-7xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.image_four {
+  height: 206px;
+  object-fit: cover;
+}
+
+.row_two-1 {
+  margin-top: 120px;
+  align-self: start;
+  width: 91%;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    padding: var(--space-3xl);
+  }
+}
